@@ -1,12 +1,10 @@
 import React from 'react';
 import './App.css';
+import Dinner from './dinner.js';
 
 function App() {
   return (
-    <div>
-      <h1>Hello World Learning React.JS</h1>
-      <img src={require('./1.png')} alt="iamage not found"/>
-    </div>
+    <Dinner DishName="Chicken Biryani" AnotherDishName="Chicken Karahi"/>
   );
 }
 export default App;

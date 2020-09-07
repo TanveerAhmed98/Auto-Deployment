@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: lightgreen;
 }
 
 code {
@@ -13,10 +14,10 @@ code {
 }
 h1{
   text-align: center;
+  background-color: whitesmoke;
   color: brown;
-  background-color: cornsilk;
 }
 img{
-  width: 1370px;
-  height: 500px;
+  height: 400px;
+  width: 100%;
 }
