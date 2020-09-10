@@ -1,6 +1,4 @@
-import React from 'react';
-
-const counterReducer = (state, action) => {
+const counterReducer = (state=0, action) => {
    switch (action){
        case 'INCREMENT':
        return state + 1
