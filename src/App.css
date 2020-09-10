@@ -1,19 +1,8 @@
-#counter{
-    text-align: center;
-}
-.box{
-    height: 500px;
-    background-color: grey;
-}
-.daylight{
-    background-color: yellow;
-}
 body{
-    background-color: black;
+  text-align: center;
+  background-color: darkgray;
 }
 button{
-    color: whitesmoke;
-    background-color: brown;
-    padding-left: 2%;
-    height: 40px;
+  background-color: darkred;
+  color:whitesmoke;
 }
