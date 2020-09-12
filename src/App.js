@@ -1,15 +1,30 @@
-import React, {useState} from 'react';
+import React from 'react';
+
+// Import CSS
 import './App.css';
-import Parent from './parent.js';
-import counterContext from './countercontext.js';
+
+// Import Components
+import { Header } from './components/Header';
+import { Balance } from './components/Balance';
+import { AccountSummary } from './components/AccountSummary';
+import { TransactionHistory } from './components/TransactionHistory';
+import { AddTransaction } from './components/AddTransaction';
+
+// Import Provider
+import { GlobalProvider } from './context/GlobalState';
+
 function App() {
-  let countState = useState(0);
   return (
-    <counterContext.Provider value = {countState}>
-    <div>
-    <Parent />
-    </div>
-    </counterContext.Provider>
+      <GlobalProvider>
+        <Header />
+        <div className="container">
+          <Balance />
+          <AccountSummary />
+          <TransactionHistory />
+          <AddTransaction />
+        </div>
+      </GlobalProvider>
   );
 }
+
 export default App;
